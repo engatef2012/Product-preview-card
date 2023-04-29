@@ -3,7 +3,6 @@
     --Cream: hsl(30, 38%, 92%);
     --Very-dark-blue: hsl(212, 21%, 14%);
     --Dark-grayish-blue: hsl(228, 12%, 48%);
-    --White: hsl(0, 0%, 100%);
     --font-size:14px;
 }
 *{
@@ -43,7 +42,7 @@ body{
 }
 .details{
     padding: 30px;
-    background-color: var(--White);
+    background-color: white;
     border-radius: 0 10px 10px 0;
     width: 300px;
 }
@@ -87,17 +86,22 @@ body{
 }
 .details a{
     background-color: var(--Dark-cyan);
+    opacity: 0.85;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--White);
+    color: white;
     text-align: center;
     padding: 15px;
     border-radius: 6px;
     text-decoration: none;
+    transition: 0.3s;
+}
+.details a:hover{
+    opacity: 1;
 }
 .details a svg{
 width: 20px;
-fill: var(--White);
+fill: white;
 margin-right: 10px;
 }
