@@ -1,0 +1,103 @@
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --font-size:14px;
+}
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--Cream);
+}
+.container{
+    max-width: 600px;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@media (max-width:600px) {
+    .container{
+        flex-wrap: wrap;
+        flex-direction:column;
+    }
+    
+}
+.container img{
+    width: 300px;
+    border-radius: 10px 0 0 10px;
+}
+@media (max-width:600px){
+    .container img{
+        content:url("./../images/image-product-mobile.jpg");
+        border-radius: 10px 10px 0 0;
+    }
+}
+.details{
+    padding: 30px;
+    background-color: var(--White);
+    border-radius: 0 10px 10px 0;
+    width: 300px;
+}
+@media (max-width:600px){
+    .details{
+        border-radius: 0 0 10px 10px;
+    }
+}
+.details >span{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: var(--Dark-grayish-blue);
+}
+.details h1{
+    font-family: 'Fraunces', serif;
+    line-height: 1;
+    margin: 25px 0;
+    color: var(--Very-dark-blue);
+}
+.details p{
+    color: var(--Dark-grayish-blue);
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+.details .prices{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.details .prices span:first-child{
+    color: var(--Dark-cyan);
+    font-size: 30px;
+    font-family: 'Fraunces', serif;
+    margin-right: 15px;
+}
+.details .prices span:last-child{
+    color: var(--Dark-grayish-blue);
+}
+.details a{
+    background-color: var(--Dark-cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--White);
+    text-align: center;
+    padding: 15px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+.details a svg{
+width: 20px;
+fill: var(--White);
+margin-right: 10px;
+}
